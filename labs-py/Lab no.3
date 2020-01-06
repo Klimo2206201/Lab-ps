@@ -1,0 +1,55 @@
+import sys
+from math import *
+print("Введите номер функции (G = 1; F = 2; Y = 3)")
+print("Для выхода из программы нажмите клавишу 9")
+nomer = int(input())
+if nomer == 9:
+    print("Выход......")
+    exit(0)
+if nomer == 1 or nomer == 2 or nomer == 3 :
+    print("Введите значение переменной a")
+    a = float(input())
+    print("Введите значение переменной x")
+    x = float(input())
+    print("Введите значение x1(borderline)")
+    x1 = float(input())
+    print("Введите значение x2(borderline)")
+    x2 = float(input())
+    print("Введите кол-во шагов (N)")
+    N = int(input())
+    h = ((x2 - x1)/N)
+
+
+if nomer == 1:
+    x = x1
+    while x < x2:
+        if a > 0 and x > 0:
+            G = 5 * ((-9) * a * a + 11 * a * x + 14 * x * x) / (15 * a * a + 49 * a * x + 24 * x * x)
+            print(G)
+        else:
+            print("Неправильное значение G")
+        x += h    
+
+elif nomer == 2:
+    x = x1
+    while x < x2:
+        if F > pi / 2 or F < pi / 2:
+            F = tan(18 * a * a + 29 * a * x + 10 * x * x);
+            print(F)
+        else:
+            print("Неправильное значение F")
+        x += h    
+    
+elif nomer == 3:
+    x = x1
+    while x < x2:
+        if Y > 1 or Y > -1:
+            Y = acos(-7 * a * a - 10 * a * x + 8 * x * x + 1);
+            print(Y)
+        else:
+            print("Неправильное значение Y")
+        x += h    
+        
+else:
+    print("ошибка выбора функции")
+    sys.exit 
