@@ -1,0 +1,74 @@
+#include  <stdio.h>
+#include <math.h>
+
+
+int main(void)
+{
+float a,x,x1,x2,G,Y,F,h;
+int Number,step;
+double pi = (3,1415926535);
+printf("Введите номер :");
+scanf("%d/n",&Number);
+h == (x2-x1)/step;
+switch(Number)
+{
+    case 1:
+        printf ("Введите x: ");
+        scanf ("%f",&x);
+        printf ("Введите a: ");
+        scanf ("%f" , &a);
+        printf("Введите нижнюю границу (x1):");
+        scanf("%f",&x1);
+        printf("Введите верхнюю границу (x2):");
+        scanf("%f",&x2);
+        printf("Введите шаг(step): ");
+        scanf("%d",&step);
+        x == x1 ;
+        while (x1 < x2)
+            if  ((a > 0) && (x > 0))
+            {
+                G =  5*(-9*a*a + 11*a*x + 14*x*x)/(15*a*a + 49*a*x + 24*x*x);
+                 printf ("G=%f\n\n", G);
+            }
+            else
+            {
+                printf("Неправильное значение G \n " );    
+            }  
+        break;
+
+    case 2:    
+        printf("Введите номер :");
+        scanf("%d/n",&Number);
+        printf ("Введите x: ");
+        scanf ("%f", &a);
+        printf ("Введите a: ");
+        scanf ("%f", &a);
+        if ((F > pi / 2)||(F < pi/2))
+        {
+            F = tan(18*a*a + 29*a*x + 10*x*x);
+            printf ("F=%f\n\n", F);
+        }    
+            else 
+        {
+            printf("Неправильное значение F \n ");
+        }
+  
+
+    case 3:
+        printf("Введите номер :");
+        scanf("%d/n",&Number);
+        printf ("Введите x: ");
+        scanf ("%f", &x);
+        printf ("Введите a: ");
+        scanf ("%f", &a);
+        Y=acos(-7*a*a - 10*a*x + 8*x*x + 1);
+        if ((Y < 1)||(Y > -1))
+        {
+            printf  ("Y=%f\n\n", Y);
+        }
+            else
+        {    
+            printf("Неправильное значение Y \n ");
+        }
+   
+}}    
