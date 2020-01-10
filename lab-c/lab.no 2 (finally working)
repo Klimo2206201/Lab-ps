@@ -7,6 +7,7 @@ int main(void)
 float a,x,G,Y,F;
 int Number;
 double pi = (3,1415926535);
+printf(" Есть три переменных (G-1),(F-2),(Y-3)");
 printf("Введите номер :");
 scanf("%d/n",&Number);
 switch(Number)
