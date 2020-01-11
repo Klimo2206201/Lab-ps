@@ -26,7 +26,7 @@ switch(Number)
         {
             printf("Неправильное значение G \n " );    
         }
-    
+    return 0;
 
     case 2:    
         printf("Введите номер :");
@@ -44,7 +44,7 @@ switch(Number)
         {
             printf("Неправильное значение F \n ");
         }
-  
+    return 0;
 
     case 3:
         printf("Введите номер :");
@@ -62,5 +62,5 @@ switch(Number)
         {    
             printf("Неправильное значение Y \n ");
         }
-   
+    return 0;
 }}    
