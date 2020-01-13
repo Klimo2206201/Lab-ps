@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+
+int main()
+{
+    FILE *Graphic;
+    char *fname= ("Graphic.txt");
+    double x, a , G;
+    system("chcp 1251");
+    system("cls");
+    x= 99;
+    a = 0.5f;
+    Graphic = fopen("Graphic.txt","w");
+    while (x>=0) {
+        G = 5 * (-9 * a * a + 11 * a * x + 14 * x * x) / (15 * a * a + 49 * a * x + 24 * x * x);
+        x -= 3.0f;
+        fprintf(Graphic, "%d", x, "%d\n", G);
+        printf("G=%f",G);
+        printf("\n x=%f",x);
+    }
+    fclose(Graphic);
+    return 0;
+}
